@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://247plumbertempe.com/sitemap.xml

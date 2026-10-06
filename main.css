@@ -4,8 +4,8 @@
   --nav-h:78px;--bp-mobile:768px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;overflow-x:hidden}
-body{font-family:'Nunito Sans',sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px;overflow-x:hidden}
+html{scroll-behavior:smooth;overflow-x:hidden;overflow-x:clip}
+body{font-family:'Nunito Sans',sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px;overflow-x:hidden;overflow-x:clip}
 h1,h2,h3,h4{font-family:'Baloo 2',sans-serif;letter-spacing:-.01em}
 a{color:inherit}
 img{max-width:100%;height:auto;display:block}
@@ -249,3 +249,78 @@ footer .disclaimer{grid-column:1/-1;border-top:1px solid var(--line);margin-top:
 .zip-chip{background:var(--berry);color:#fff;font-size:12.5px;font-weight:700;padding:6px 13px;border-radius:100px;letter-spacing:.02em}
 
 .hero-photo{width:100%;max-width:100%;height:auto;border-radius:16px;margin:24px 0;display:block;object-fit:cover}
+
+
+/* hero photo backgrounds */
+.pagehead.has-photo,.hero.has-photo{background-image:linear-gradient(90deg,rgba(26,14,24,.80) 0%,rgba(26,14,24,.60) 55%,rgba(26,14,24,.38) 100%),var(--hero-img);background-size:cover;background-position:center}
+.pagehead.has-photo{padding:76px 0}
+.hero.has-photo{padding:84px 0}
+.has-photo h1{color:#fff}
+.has-photo p{color:#f4eaf1}
+.has-photo .crumb{color:#e9d8e3}
+.has-photo .crumb a{color:var(--volt)}
+.has-photo .byline{color:#e9d8e3}
+.hero.has-photo h1 span{color:var(--volt)}
+.hero.has-photo .circ{display:none}
+.hero.has-photo .trustrow{color:#f4eaf1}
+.hero.has-photo .trustrow span:before{color:var(--volt)}
+@media (max-width:700px){
+.pagehead.has-photo,.hero.has-photo{background-image:linear-gradient(rgba(26,14,24,.80),rgba(26,14,24,.70)),var(--hero-img)}
+.pagehead.has-photo{padding:52px 0}
+.hero.has-photo{padding:56px 0}
+}
+
+/* per-page hero images */
+.ph-areas-header{--hero-img:url('/img/photos/areas-header.webp')}
+.ph-backflow-testing-prevention-hero{--hero-img:url('/img/photos/backflow-testing-prevention-hero.webp')}
+.ph-burst-pipe-repair-hero{--hero-img:url('/img/photos/burst-pipe-repair-hero.webp')}
+.ph-commercial-plumbing-hero{--hero-img:url('/img/photos/commercial-plumbing-hero.webp')}
+.ph-drain-cleaning-unclogging-hero{--hero-img:url('/img/photos/drain-cleaning-unclogging-hero.webp')}
+.ph-faucet-sink-repair-hero{--hero-img:url('/img/photos/faucet-sink-repair-hero.webp')}
+.ph-garbage-disposal-repair-installation-hero{--hero-img:url('/img/photos/garbage-disposal-repair-installation-hero.webp')}
+.ph-grease-trap-maintenance-tempe-restaurants-header{--hero-img:url('/img/photos/grease-trap-maintenance-tempe-restaurants-header.webp')}
+.ph-hard-water-101-what-15-gpg-means-tempe-header{--hero-img:url('/img/photos/hard-water-101-what-15-gpg-means-tempe-header.webp')}
+.ph-home-hero{--hero-img:url('/img/photos/home-hero.webp')}
+.ph-how-often-flush-water-heater-tempe-hard-water-header{--hero-img:url('/img/photos/how-often-flush-water-heater-tempe-hard-water-header.webp')}
+.ph-how-to-tell-if-you-have-galvanized-pipe-header{--hero-img:url('/img/photos/how-to-tell-if-you-have-galvanized-pipe-header.webp')}
+.ph-hydro-jetting-hero{--hero-img:url('/img/photos/hydro-jetting-hero.webp')}
+.ph-leak-detection-hero{--hero-img:url('/img/photos/leak-detection-hero.webp')}
+.ph-monsoon-season-plumbing-checklist-tempe-header{--hero-img:url('/img/photos/monsoon-season-plumbing-checklist-tempe-header.webp')}
+.ph-plumber-ahwatukee-az-hero{--hero-img:url('/img/photos/plumber-ahwatukee-az-hero.webp')}
+.ph-plumber-guadalupe-az-hero{--hero-img:url('/img/photos/plumber-guadalupe-az-hero.webp')}
+.ph-plumber-south-chandler-az-hero{--hero-img:url('/img/photos/plumber-south-chandler-az-hero.webp')}
+.ph-plumber-south-scottsdale-az-hero{--hero-img:url('/img/photos/plumber-south-scottsdale-az-hero.webp')}
+.ph-plumber-west-mesa-az-hero{--hero-img:url('/img/photos/plumber-west-mesa-az-hero.webp')}
+.ph-plumbing-installation-hero{--hero-img:url('/img/photos/plumbing-installation-hero.webp')}
+.ph-plumbing-permits-tempe-what-actually-needs-one-header{--hero-img:url('/img/photos/plumbing-permits-tempe-what-actually-needs-one-header.webp')}
+.ph-pool-leak-detection-repair-hero{--hero-img:url('/img/photos/pool-leak-detection-repair-hero.webp')}
+.ph-pool-leak-or-evaporation-tempe-header{--hero-img:url('/img/photos/pool-leak-or-evaporation-tempe-header.webp')}
+.ph-renting-near-asu-plumbing-tenants-landlords-header{--hero-img:url('/img/photos/renting-near-asu-plumbing-tenants-landlords-header.webp')}
+.ph-repiping-whole-home-pipe-replacement-hero{--hero-img:url('/img/photos/repiping-whole-home-pipe-replacement-hero.webp')}
+.ph-sewer-camera-inspection-hero{--hero-img:url('/img/photos/sewer-camera-inspection-hero.webp')}
+.ph-sewer-line-repair-costs-trenchless-vs-traditional-tempe-header{--hero-img:url('/img/photos/sewer-line-repair-costs-trenchless-vs-traditional-tempe-header.webp')}
+.ph-sewer-line-repair-hero{--hero-img:url('/img/photos/sewer-line-repair-hero.webp')}
+.ph-signs-of-a-slab-leak-in-an-older-tempe-home-header{--hero-img:url('/img/photos/signs-of-a-slab-leak-in-an-older-tempe-home-header.webp')}
+.ph-slab-leak-detection-repair-hero{--hero-img:url('/img/photos/slab-leak-detection-repair-hero.webp')}
+.ph-sump-pump-installation-repair-hero{--hero-img:url('/img/photos/sump-pump-installation-repair-hero.webp')}
+.ph-tank-vs-tankless-water-heater-tempe-header{--hero-img:url('/img/photos/tank-vs-tankless-water-heater-tempe-header.webp')}
+.ph-tankless-water-heater-service-hero{--hero-img:url('/img/photos/tankless-water-heater-service-hero.webp')}
+.ph-toilet-repair-installation-hero{--hero-img:url('/img/photos/toilet-repair-installation-hero.webp')}
+.ph-toilet-running-non-stop-causes-header{--hero-img:url('/img/photos/toilet-running-non-stop-causes-header.webp')}
+.ph-water-damage-restoration-hero{--hero-img:url('/img/photos/water-damage-restoration-hero.webp')}
+.ph-water-filtration-installation-hero{--hero-img:url('/img/photos/water-filtration-installation-hero.webp')}
+.ph-water-heater-installation-replacement-hero{--hero-img:url('/img/photos/water-heater-installation-replacement-hero.webp')}
+.ph-water-heater-repair-hero{--hero-img:url('/img/photos/water-heater-repair-hero.webp')}
+.ph-water-line-repair-replacement-hero{--hero-img:url('/img/photos/water-line-repair-replacement-hero.webp')}
+.ph-water-mitigation-hero{--hero-img:url('/img/photos/water-mitigation-hero.webp')}
+.ph-water-softener-installation-repair-hero{--hero-img:url('/img/photos/water-softener-installation-repair-hero.webp')}
+.ph-water-softener-vs-filtration-which-do-you-need-header{--hero-img:url('/img/photos/water-softener-vs-filtration-which-do-you-need-header.webp')}
+.ph-what-to-do-before-plumber-arrives-burst-pipe-header{--hero-img:url('/img/photos/what-to-do-before-plumber-arrives-burst-pipe-header.webp')}
+.ph-why-is-my-water-bill-so-high-tempe-header{--hero-img:url('/img/photos/why-is-my-water-bill-so-high-tempe-header.webp')}
+
+/* footer social links */
+footer .social{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;border-top:1px solid var(--line);margin-top:8px;padding-top:18px}
+footer .social h3{margin:0 8px 0 0}
+footer .social a{display:inline-block;margin:0;padding:7px 16px;border:1px solid var(--line);border-radius:999px;font-weight:700;color:var(--ink)}
+footer .social a:hover{background:var(--berry);border-color:var(--berry);color:#fff}
+footer .disclaimer a{display:inline;margin:0}

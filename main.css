@@ -329,3 +329,6 @@ footer .disclaimer a{display:inline;margin:0}
 .ph-plumber-gilbert-az-hero{--hero-img:url('/img/photos/plumber-gilbert-az-hero.webp')}
 .ph-plumber-scottsdale-az-hero{--hero-img:url('/img/photos/plumber-scottsdale-az-hero.webp')}
 .ph-plumber-phoenix-az-hero{--hero-img:url('/img/photos/plumber-phoenix-az-hero.webp')}
+
+.nb-links{margin-top:22px;text-align:center;font-weight:600}
+.nb-links a{color:var(--berry,#C21A6B);text-decoration:underline;text-underline-offset:3px}
